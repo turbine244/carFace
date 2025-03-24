@@ -10,7 +10,7 @@ def user_accelerate() :
             time.sleep(0.01)
         
         if (keyboard.is_pressed("a")) :
-            stat.throttle -= 50
+            stat.throttle -= 60
             
         if (keyboard.is_pressed("s")) :
             stat.throttle -= 1
@@ -19,7 +19,7 @@ def user_accelerate() :
             stat.throttle += 1
             
         if (keyboard.is_pressed("f")) :
-            stat.throttle += 100            
+            stat.throttle += 60            
         
         if (stat.throttle < 0) :
             stat.throttle = 0
