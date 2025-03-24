@@ -11,8 +11,8 @@ interrupt_throttle = False
 throttle = 0.0
 rpm = 800.0
 
-max_rpm = 7000
-idle_rpm = 800
+max_rpm = 7000.0
+idle_rpm = 800.0
 response_rate = 0.1
 
 message = ""

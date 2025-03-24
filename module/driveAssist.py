@@ -1,12 +1,12 @@
 import time
-import threading as th
+import math
 import module.status as stat
 
 def safeDrive() :    
     stat.interrupt_throttle = True
     stat.message = "감속 중"
     
-    while ((stat.rpm.__floor__() > stat.idle_rpm.__floor__())) :
+    while ((math.floor(stat.rpm) > math.floor(stat.idle_rpm))) :
         stat.throttle *= 0.90
         time.sleep(0.01)
 
