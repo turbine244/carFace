@@ -6,6 +6,10 @@ import module.status as stat
 import module.detect_acc as da
 import module.user_control as uc
 
+import module.model_face as model
+
+model.network.summary() 
+    
 listThread = []
 listThread.append(th.Thread(target=stat.print_dashboard))
 listThread.append(th.Thread(target=car.engineWorks))
